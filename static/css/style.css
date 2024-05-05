@@ -41,14 +41,12 @@ li, a {
   transition: all 0.2s;
 }
 
-a {
-  padding: 5px 20px;
+li {
+  padding: 0px;
 }
 
-a:hover {
-  opacity: 75%;
-  background: rgba(255,255,255, .1);
-  border-radius:10px
+a {
+  padding: 5px 20px;
 }
 
 .menuBtn {
@@ -85,7 +83,7 @@ a:hover {
     padding: 10px;
     position: fixed;
     top: 30px;
-    left: 70px;
+    right: -30%;
     align-items: center;
     align-content: center;
     margin-right: 35%;
@@ -96,10 +94,7 @@ a:hover {
     transition: all 0.5s;
   }
 
-  .menuBtn:hover {
-    scale: 140%;
-  }
-  .menu {
+ .menu {
 
     position: fixed;
     /* position: fixed; */
@@ -119,8 +114,12 @@ a:hover {
   .menu.notopened {
     left: -180px;
   }
+
 }
 
+ul:hover > :not(:hover) {
+  opacity: 0.4;
+}
 
 .menu li {
   display: inline-block;
